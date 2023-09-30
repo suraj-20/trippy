@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { MenuItems } from "./NavbarMenu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -17,14 +18,14 @@ const Navbar = () => {
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
 
-      <ul className={clicked ? "nav-menu active" : "nav-menu flex"} >
+      <ul className={clicked ? "nav-menu active" : "nav-menu flex"}>
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a className={item.cName} href={item.url}>
+              <Link className={item.cName} to={item.url}>
                 <i className={item.icon}></i>
                 {item.title}
-              </a>
+              </Link>
             </li>
           );
         })}
