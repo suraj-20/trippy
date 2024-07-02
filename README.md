@@ -2,6 +2,10 @@
 
 ## Getting Started
 
+![image](https://github.com/suraj-20/trippy/assets/98269753/077e1b98-2217-464b-8814-5d0b58f7b5d8)
+
+![image](https://github.com/suraj-20/trippy/assets/98269753/7f9ff3da-9041-4b67-a67a-29d645865bae)
+
 ### Technogy Used
 
 - React.js
